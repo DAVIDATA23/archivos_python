@@ -14,6 +14,14 @@ import csv
 
 def desafio():
     print('Ejercicios con diccionarios')
+    stock={}
+    stock["tornillos"]=100
+    stock["tuercas"]=150
+    stock["arandelas"]=300
+    return stock
+    
+    
+    
     # Crear un diccionario vacio
     # el diccionario vacio debe llamarse "stock"
     
@@ -38,4 +46,9 @@ def desafio():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     desafio()
+
+    print(desafio())
+
+
+    
 

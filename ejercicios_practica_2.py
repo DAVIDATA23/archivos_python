@@ -19,7 +19,34 @@ def desafio():
     # de nuestros productos en cero:
     
     stock = {'tornillos': 0, 'tuercas': 0, 'arandelas': 0}
+   
+   
+    while True:
 
+        print("Seleccione producto que quiere agregar al stock: ")
+        print("Tornillos")
+        print("Arandelas")
+        print("Tuercas")
+        print ("FIN")
+
+        seleccion=str(input())
+        seleccion=seleccion.lower()
+        if seleccion == "fin":
+            print("Stock modificado........")
+            break
+        
+        elif seleccion in stock:
+            print("ingrese cantidad a agregar ")
+            cantidad=int(input())  
+            stock[seleccion] +=cantidad       
+            print(stock)
+       
+        else:
+            print("ese articulo no existe")
+            print("................")
+            print("...................")
+        
+    return stock
     # Paso 1:
     # Crear un bucle utilizando while que se ejecute de forma infinita
     # while True.....
@@ -50,4 +77,9 @@ def desafio():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    desafio()
+    print(desafio())
+   
+
+
+
+
